@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "企业详情",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-tabs": "/wxcomponents/vant/dist/tabs/index",
+    "van-tab": "/wxcomponents/vant/dist/tab/index",
+    "product-info-list": "/components/product_info_list"
+  }
+}

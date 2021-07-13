@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "发布冷链",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+    "van-area": "/wxcomponents/vant/dist/area/index",
+    "van-popup": "/wxcomponents/vant/dist/popup/index",
+    "driver-info-list": "/components/driver_info_list"
+  }
+}

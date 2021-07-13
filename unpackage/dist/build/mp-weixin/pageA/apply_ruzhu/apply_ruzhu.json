@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "申请入驻",
+  "usingComponents": {
+    "u-popup": "/uview-ui/components/u-popup/u-popup",
+    "van-button": "/wxcomponents/vant/dist/button/index",
+    "van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
+    "van-checkbox-group": "/wxcomponents/vant/dist/checkbox-group/index",
+    "van-area": "/wxcomponents/vant/dist/area/index"
+  }
+}

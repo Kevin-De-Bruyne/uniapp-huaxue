@@ -1,0 +1,1 @@
+page{background-color:#fff;padding-bottom:30rpx}.subject{padding:40rpx}.subject .title{font-size:52rpx;text-align:left;line-height:1.4;font-weight:400}.subject .details{line-height:60rpx;letter-spacing:2px;width:100%}

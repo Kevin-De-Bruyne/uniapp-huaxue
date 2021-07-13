@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "展销列表",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+    "tabbar": "/components/tabbar",
+    "qiye-info-llist": "/components/qiye_info_list"
+  }
+}

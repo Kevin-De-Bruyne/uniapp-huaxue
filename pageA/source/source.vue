@@ -1,0 +1,188 @@
+<template>
+	<view>
+		<!-- <view class="banner_select"> -->
+					<!-- 分类筛选 -->
+			<!-- 		<van-dropdown-menu>
+					  <van-dropdown-item v-model="value1" :options="option1"/>
+					  <van-dropdown-item v-model="value2" :options="option2" />
+					   <van-dropdown-item v-model="value3" :options="option3" />
+					</van-dropdown-menu> -->
+					
+					<!-- 地区筛选列表 -->
+					<view class="content">
+					
+						<LiFilter @change="change" @select="select" :datalist="datalist" :height="height" class="filter"></LiFilter>
+						<LiFilter @change="change2" @select="select2" :datalist="datalist2" :height="height"></LiFilter>
+						<view 
+							v-bind:key="item.value" 
+							v-for="item in testList">
+							<!-- {{ item.text }} -->
+						</view>
+					</view>
+		<!-- </view> -->
+	
+		<!-- 司机列表 -->
+		<sourceInfoList :source="source" class="source"></sourceInfoList>
+	</view>
+</template>
+
+<script>
+	import LiFilter from '@/components/Li-Filter/Li-Filter.vue';
+	import Source from '../../api/source'
+	import sourceInfoList from '../../components/source_info_list.vue'
+	export default {
+		data() {
+			return {
+				value1: 0,
+			    value2: 0,
+				value3:0,
+				option1: [
+					{ text: '出发地', value: 0},
+				   { text: '广州', value: 1 },
+				   { text: '佛山', value: 2 },
+				   { text: '东莞', value: 3 },
+				   { text: '深圳', value: 4 },
+				   { text: '中山', value: 5 },
+				 ],
+				 option2: [
+				{ text: '目的地', value: 0 }, 
+				{ text: '广州', value: 1 },
+				{ text: '佛山', value: 2 },
+				{ text: '东莞', value: 3 },
+				 { text: '深圳', value: 4 },
+				  { text: '中山', value: 5 },
+				 ],
+				 option3: [
+				   { text: '时间排序', value: 0 }
+				],
+				 source:[],
+				 datalist: {},
+				 datalist2: {},
+				 testList: {},
+				 height: 0.6,
+				 title: 'Hello',
+				 chufa_id:'',
+				 daoda_id:''
+			}
+		},
+		components:{
+			sourceInfoList,
+			LiFilter
+		},
+		onLoad(){
+			this.getList()
+			let tempdata = {
+				filterType: 1,
+				data: []
+			};
+			let tempdata2 = {
+				filterType: 1,
+				data: []
+			};
+			let areaData = require('../static/area.json');
+			let areaData2 = require('../static/area.json');
+			let typeData = require('../static/type.json');
+			let AreaItem = {
+				title: '出发地', //排序头的名称
+				value: 'c',
+				type: 2, //类型，0：没有下拉选项，1：单项下拉列表，2：多项列表，如地区选择
+				data: areaData
+			};
+			let AreaItem2 = {
+				title: '目的地', //排序头的名称
+				value: 'c',
+				type: 2, //类型，0：没有下拉选项，1：单项下拉列表，2：多项列表，如地区选择
+				data: areaData2
+			};
+			tempdata.data.push(AreaItem)
+			tempdata2.data.push(AreaItem2)
+			this.datalist = tempdata;
+			this.datalist2 = tempdata2;
+		},
+		methods: {
+			change(e) {
+				console.log('----------change----------');
+				console.log(e);
+			},
+			select(e) {
+				var that=this
+				console.log('----------select----------');
+				console.log(e);
+				that.chufa_id=e.data.value
+				console.log(that.chufa_id)
+				Source.getList({
+					region_id:that.chufa_id
+				},function(res){
+					that.source=res.data
+				})
+			},
+			change2(e) {
+				console.log('----------change----------');
+				console.log(e);
+			},
+			select2(e) {
+				var that=this
+				console.log('----------select----------');
+				console.log(e);
+				this.daoda_id=e.data.value
+				console.log(this.daoda_id)
+				Source.getList({
+					end_region_id:that.daoda_id
+				},function(res){
+					that.source=res.data
+				})
+			},
+			getList(){
+				var that=this
+				Source.getList({
+					
+				},function(res){
+					that.source=res.data
+				})
+			},
+			renzheng(){
+				uni.navigateTo({
+					url:'/pageA/shimin/shimin'
+				})
+			}
+		}
+	}
+</script>
+
+<style lang="scss" scoped>
+	.filter{
+		width: 50%;
+	}
+	.content{
+		display: flex;
+		flex-direction: row;
+	}
+	.source{
+	position: relative;
+		top: -10rpx;
+		// padding-top: 180rpx;
+	}
+	.banner_select{
+		position: fixed;
+		top: 0;
+		z-index: 1300;
+		width: 100%;
+		height: 400rpx;
+	}
+	.banner{
+		width: 100%;
+		position: relative;
+		height: 400rpx;
+		image{
+			width: 100%;
+			height: 100%;
+		}
+		.renzheng_box{
+			position: absolute;
+			right: 50rpx;
+			bottom: 20rpx;
+			padding:30rpx 30rpx;
+			background-color: #fff;
+	}
+	}
+</style>

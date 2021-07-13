@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "filter-item": "/components/Li-Filter/Li-Filter-item",
+    "filter-list": "/components/Li-Filter/Li-Filter-list"
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,oO;AACAA,UAAU,CAACC,oBAAD,CAAV,C","file":"pageA/pages/zhaomu_part/zhaomu_part.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pageA/pages/zhaomu_part/zhaomu_part.vue'\ncreatePage(Page)"],"sourceRoot":""}

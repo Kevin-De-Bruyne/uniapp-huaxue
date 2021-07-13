@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "产业专区",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "tabbar": "/components/tabbar",
+    "product-info-list": "/components/product_info_list"
+  }
+}

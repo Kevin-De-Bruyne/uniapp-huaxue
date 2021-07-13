@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "找冷库",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+    "leng-ku": "/components/lengku",
+    "li-filter": "/components/Li-Filter/Li-Filter"
+  }
+}

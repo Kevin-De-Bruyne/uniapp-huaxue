@@ -1,0 +1,1 @@
+<view class="demo"><canvas style="{{'width:'+(canvasW+'px')+';'+('height:'+(canvasH+'px')+';')}}" canvas-id="myCanvas" id="myCanvas"></canvas><button data-event-opts="{{[['tap',[['saveImgToLocal',['$event']]]]]}}" bindtap="__e">保存图片</button></view>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,qN;AACAA,UAAU,CAACC,eAAD,CAAV,C","file":"pageA/pages/shimin/shimin.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pageA/pages/shimin/shimin.vue'\ncreatePage(Page)"],"sourceRoot":""}

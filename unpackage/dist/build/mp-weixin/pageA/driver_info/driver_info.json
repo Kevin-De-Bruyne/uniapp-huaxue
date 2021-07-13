@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "司机信息",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+    "driver-info-list": "/components/driver_info_list",
+    "li-filter": "/components/Li-Filter/Li-Filter"
+  }
+}

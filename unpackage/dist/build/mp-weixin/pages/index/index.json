@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "华雪云链",
+  "usingComponents": {
+    "index-mao-scroll-default": "/pages/index/index-mao-scroll-default",
+    "u-image": "/uview-ui/components/u-image/u-image",
+    "van-button": "/wxcomponents/vant/dist/button/index",
+    "van-checkbox": "/wxcomponents/vant/dist/checkbox/index",
+    "mao-scroll": "/components/mao-scroll/mao-scroll"
+  }
+}

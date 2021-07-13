@@ -1,0 +1,21 @@
+<view class="apply data-v-485e26b8"><view class="swiper_image data-v-485e26b8"><image src="{{urlHeader+img}}" class="data-v-485e26b8"></image></view><view class="intro data-v-485e26b8">广东冷链仓储物流交流平台火热招募
+			为贯彻《中共中央、国务院关于抓好“三农"领域重点工
+			作确保如期实现全面小康的意见》(中发(2020] 1
+			号)、《关于做好2020年国家骨干冷 链物流基地建设工
+			作的通知》(发改经贸 ( 2020 ) 1066号)精神和省
+			委、省政府工作部署，着力保障重要农产品有效供给
+			和促进农民持续增收，有效支撑农产品仓储保鲜冷链
+			物流设施建设,依据《广东省人民政府办公厅印发关于
+			支持省级现代农业产业园建设政策措施的通知》(粵
+			办函(2019] 289号)和《广东省人民政府办公厅关于
+			加快推进生猪家禽产业转型升级的意见》(粵府办
+			[2019] 25号)，拟建设”广东省农产品冷链仓储物流
+			交流平台"，并在广东农产品”保供稳价安心”数字平台
+			宣传推广使用。以市场需求为导向，促进农户生产、
+			企业加工、客户营销和终端消费连成一-体、协同运
+			作，增强供给侧对需求侧的适应性和灵活性。借助互
+			联网信息交互高效、低成本的优势，探索线上线下一
+			体化仓储保鲜冷链物流创新新模式，进- -步打通供需
+			交易的各个环节，为行业提供新的发展方向。针对工
+			作的要求和开展情况，现招募冷链仓储物流企业入驻
+			平台:</view><view class="share data-v-485e26b8">--信息填报--</view><view class="form data-v-485e26b8"><view class="form_list data-v-485e26b8"><view class="form_list_t data-v-485e26b8">您的姓名?</view><view class="form_list_b data-v-485e26b8"><input type="text" placeholder="输入" data-event-opts="{{[['input',[['__set_model',['','name','$event',[]]]]]]}}" value="{{name}}" bindinput="__e" class="data-v-485e26b8"/></view></view><view style="margin-top:20rpx;font-size:23rpx;font-weight:bold;" class="data-v-485e26b8">请上传公司图片</view><block wx:if="{{file1==''}}"><view data-event-opts="{{[['tap',[['jiashi_zheng',['$event']]]]]}}" class="form_image data-v-485e26b8" bindtap="__e"><text class="yticon icon-jiahao data-v-485e26b8"></text><text class="wenzi data-v-485e26b8">(文字,清晰,四角齐全)</text></view></block><block wx:else><view data-event-opts="{{[['tap',[['jiashi_zheng',['$event']]]]]}}" class="form_image data-v-485e26b8" bindtap="__e"><image src="{{file1}}" class="data-v-485e26b8"></image></view></block><view class="form_list data-v-485e26b8"><view class="form_list_t data-v-485e26b8">请输入详细内容</view><view class="form_list_b data-v-485e26b8"><textarea name id cols="30" rows="10" class="data-v-485e26b8"></textarea></view></view><view class="form_list data-v-485e26b8"><view class="form_list_t data-v-485e26b8">您的手机联系号码?</view><view class="form_list_b data-v-485e26b8"><input type="text" placeholder="输入" data-event-opts="{{[['input',[['__set_model',['','phone','$event',[]]]]]]}}" value="{{phone}}" bindinput="__e" class="data-v-485e26b8"/></view></view><view class="form_list data-v-485e26b8"><view class="form_list_t data-v-485e26b8">您企业名称?</view><view class="form_list_b data-v-485e26b8"><input type="text" placeholder="输入" data-event-opts="{{[['input',[['__set_model',['','company','$event',[]]]]]]}}" value="{{company}}" bindinput="__e" class="data-v-485e26b8"/></view></view><view class="form_list data-v-485e26b8"><view class="form_list_t data-v-485e26b8">您的企业所在区县?</view><view data-event-opts="{{[['tap',[['e0',['$event']]]]]}}" class="form_list_b data-v-485e26b8" bindtap="__e"><view class="data-v-485e26b8">{{address}}</view></view></view><view class="form_list data-v-485e26b8"><view class="form_list_t data-v-485e26b8">您的企业类型?</view></view><block wx:for="{{navList}}" wx:for-item="item" wx:for-index="index" wx:key="index"><van-checkbox vue-id="{{'4c82b00a-1-'+index}}" checked-color="#008000" value="{{item.isActive}}" data-event-opts="{{[['^change',[['activeFun',['$0'],[[['navList','',index]]]]]],['^input',[['__set_model',['$0','isActive','$event',[]],[[['navList','',index]]]]]]]}}" data-com-type="wx" bind:change="__e" bind:input="__e" class="data-v-485e26b8" bind:__l="__l" vue-slots="{{['default']}}">{{item.text}}</van-checkbox></block><u-popup bind:input="__e" vue-id="4c82b00a-2" mode="bottom" length="60%" value="{{show}}" data-event-opts="{{[['^input',[['__set_model',['','show','$event',[]]]]]]}}" class="data-v-485e26b8" bind:__l="__l" vue-slots="{{['default']}}"><van-area vue-id="{{('4c82b00a-3')+','+('4c82b00a-2')}}" title="标题" area-list="{{areaList}}" value="{{value}}" data-event-opts="{{[['^confirm',[['confirm']]],['^cancel',[['cancel']]]]}}" data-com-type="wx" bind:confirm="__e" bind:cancel="__e" class="data-v-485e26b8" bind:__l="__l"></van-area></u-popup><view class="submit data-v-485e26b8"><view data-event-opts="{{[['tap',[['submit',['$event']]]]]}}" class="submit_btn data-v-485e26b8" bindtap="__e">提交</view></view></view></view>

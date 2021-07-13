@@ -1,0 +1,85 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/fabu/fabu",
+    "pages/bus_list/bus_list",
+    "pages/bus_detail/bus_detail",
+    "pages/public/login",
+    "pages/category/category",
+    "pages/product/list",
+    "pages/product/product",
+    "pages/article/column",
+    "pages/article/index",
+    "pages/article/details",
+    "pages/mine/mine",
+    "pages/Owner_certification/Owner_certification"
+  ],
+  "subPackages": [
+    {
+      "root": "pageA",
+      "pages": [
+        "sell_part/sell_part",
+        "product_part/product_part",
+        "lenglian/lenglian",
+        "fabu_form/fabu_form",
+        "fabu_lengku/fabu_lengku",
+        "apply_ruzhu/apply_ruzhu",
+        "fabu_lenglian/fabu_lenglian",
+        "shimin/shimin",
+        "source/source",
+        "driver_info/driver_info",
+        "qiye_detail/qiye_detail",
+        "car_info/car_info",
+        "jiazhao_info/jiazhao_info",
+        "cheliang_info/cheliang_info",
+        "sell_list/sell_list",
+        "zhaomu_detail/zhaomu_detail",
+        "zhaomu_part/zhaomu_part",
+        "product_detail/product_detail",
+        "login/login",
+        "lengku_part/lengku_part",
+        "article_list/article_list",
+        "qiye_renzheng/qiye_renzheng",
+        "qr_code/qr_code"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarBackgroundColor": "#44CC69",
+    "backgroundColor": "#f8f8f8"
+  },
+  "tabBar": {
+    "color": "#C0C4CC",
+    "selectedColor": "#44CC69",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "./pageA/static/icon_home_on.png",
+        "selectedIconPath": "./pageA/static/icon_home_on.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/fabu/fabu",
+        "iconPath": "./pageA/static/icon_fb_on.png",
+        "selectedIconPath": "./pageA/static/icon_fb_on.png",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "iconPath": "./pageA/static/icon_me_on.png",
+        "selectedIconPath": "./pageA/static/icon_me_on.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于位置接口的效果展示"
+    }
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

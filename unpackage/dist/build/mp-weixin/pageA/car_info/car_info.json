@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "车辆信息",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+    "van-area": "/wxcomponents/vant/dist/area/index",
+    "van-popup": "/wxcomponents/vant/dist/popup/index",
+    "driver-info-list": "/components/driver_info_list"
+  }
+}

@@ -1,0 +1,4 @@
+.filter-signal-item{background-color:#fff;color:#909090;padding:0 3px;line-height:38px;overflow:hidden;-webkit-transition:background-color .1s linear;transition:background-color .1s linear;white-space:nowrap;text-overflow:ellipsis}.filter-signal-item >._i{float:right;margin-right:15px}.filter-signal-item-active{color:#ff4500}.filterLine{position:relative}.filterLine:before,
+.filterLine:after{position:absolute;content:" ";height:1px;width:100%;left:0;transform-origin:0 0;-webkit-transform-origin:0 0}.filterLine:after{bottom:0;border-bottom:1px solid #c8c7cc}@media only screen and (-webkit-min-device-pixel-ratio:1.5){.filterLine:after,
+	.filterLine:before{-webkit-transform:scaleY(.667)}}@media only screen and (-webkit-min-device-pixel-ratio:2){.filterLine:after,
+	.filterLine:before{-webkit-transform:scaleY(.5)}}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["uni-app:///main.js"],"names":["createPage","Page"],"mappings":";;;;;;;;;;kDAAA;AACA;AACA,uO;AACAA,UAAU,CAACC,qBAAD,CAAV,C","file":"pageA/pages/jiazhao_info/jiazhao_info.js","sourcesContent":["import 'uni-pages';\nimport Vue from 'vue'\nimport Page from './pageA/pages/jiazhao_info/jiazhao_info.vue'\ncreatePage(Page)"],"sourceRoot":""}

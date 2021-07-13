@@ -1,0 +1,15 @@
+{
+  "navigationBarTitleText": "冷链专区",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-dropdown-item": "/wxcomponents/vant/dist/dropdown-item/index",
+    "van-area": "/wxcomponents/vant/dist/area/index",
+    "van-popup": "/wxcomponents/vant/dist/popup/index",
+    "van-cell": "/wxcomponents/vant/dist/cell/index",
+    "van-tabs": "/wxcomponents/vant/dist/tabs/index",
+    "van-tab": "/wxcomponents/vant/dist/tab/index",
+    "source-info-list": "/components/source_info_list",
+    "driver-info-list": "/components/driver_info_list"
+  }
+}

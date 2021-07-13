@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "驾驶人信息",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "u-calendar": "/uview-ui/components/u-calendar/u-calendar",
+    "van-dropdown-menu": "/wxcomponents/vant/dist/dropdown-menu/index",
+    "van-uploader": "/wxcomponents/vant/dist/uploader/index",
+    "van-datetime-picker": "/wxcomponents/vant/dist/datetime-picker/index"
+  }
+}
